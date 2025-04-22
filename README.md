@@ -52,19 +52,19 @@ lib/
 1. **Open your terminal** and run the following command to fetch the script directly from GitHub:
 
     ```bash
-    curl -s https://raw.githubusercontent.com/yourusername/flutter_structure_generator/main/generate_structure.dart -o generate_structure.dart
+    curl -s https://raw.githubusercontent.com/codewithmashi/flutter_structure_generator/main/bin/generate_structure.dart -o generate_structure.dart
     ```
 
     Or, if you're using `wget`:
 
     ```bash
-    wget https://raw.githubusercontent.com/yourusername/flutter_structure_generator/main/generate_structure.dart
+    wget https://raw.githubusercontent.com/codewithmashi/flutter_structure_generator/main/bin/generate_structure.dart
     ```
 
-2. **Run the script** using Dart:
+2. **Run the script** using Dart (Make sure you're inside the root of your Flutter project):
 
     ```bash
-    dart run generate_structure.dart
+    dart run bin/generate_structure.dart
     ```
 
     ✅ The script will automatically generate the folder structure in your **current Flutter project directory**.
