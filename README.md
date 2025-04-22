@@ -47,22 +47,34 @@ lib/
 
 ## 🛠️ How to Use
 
-1. **Clone or download** this repository.
-2. Place the `generate_structure.dart` file inside your Flutter project folder.
-3. Run the script using Dart:
+### **Run it directly from GitHub without downloading**
 
-```bash
-dart run generate_structure.dart
-```
+1. **Open your terminal** and run the following command to fetch the script directly from GitHub:
 
-✅ It will automatically create all folders and files under your `lib/` directory.
+    ```bash
+    curl -s https://raw.githubusercontent.com/yourusername/flutter_structure_generator/main/generate_structure.dart -o generate_structure.dart
+    ```
+
+    Or, if you're using `wget`:
+
+    ```bash
+    wget https://raw.githubusercontent.com/yourusername/flutter_structure_generator/main/generate_structure.dart
+    ```
+
+2. **Run the script** using Dart:
+
+    ```bash
+    dart run generate_structure.dart
+    ```
+
+    ✅ The script will automatically generate the folder structure in your **current Flutter project directory**.
 
 ---
 
 ## 📎 Requirements
 
 - Dart SDK installed
-- A Flutter project (or just a directory to generate the structure)
+- A Flutter project (or a directory where you want the structure generated)
 
 ---
 
@@ -95,3 +107,4 @@ Made with ❤️ by [@codewithmashi](https://github.com/codewithmashi)
 ## 📜 License
 
 This project is open-source and available under the [MIT License](LICENSE).
+```
