@@ -1,0 +1,11 @@
+name: flutter_structure_generator
+description: A Dart script to generate Flutter project structure
+version: 1.0.0
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  args: ^2.3.0
+
+dev_dependencies:
+  pedantic: ^1.11.1
