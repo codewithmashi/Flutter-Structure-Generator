@@ -64,7 +64,7 @@ lib/
 2. **Run the script** using Dart (Make sure you're inside the root of your Flutter project):
 
     ```bash
-    dart run bin/generate_structure.dart
+    dart run generate_structure.dart
     ```
 
     ✅ The script will automatically generate the folder structure in your **current Flutter project directory**.
