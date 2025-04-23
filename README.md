@@ -28,14 +28,6 @@ lib/
 │   │   ├── models/
 │   │   └── services/
 │   ├── modules/
-│   │   ├── dashboard/
-│   │   │   └── widgets/
-│   │   ├── skills/
-│   │   ├── projects/
-│   │   ├── ai_assistant/
-│   │   ├── analytics/
-│   │   ├── profile/
-│   │   └── subscription/
 │   ├── routes/
 │   └── themes/
 └── shared/
