@@ -52,7 +52,7 @@ lib/
 1. **Open your terminal** and run the following command to fetch the script directly from GitHub:
 
     ```bash
-    curl -s https://github.com/codewithmashi/Flutter-Structure-Generator/tree/main/flutter_structure_generator/bin/generate_structure.dart -o generate_structure.dart
+    Invoke-WebRequest -Uri https://raw.githubusercontent.com/codewithmashi/Flutter-Structure-Generator/main/flutter_structure_generator/bin/generate_structure.dart -OutFile generate_structure.dart
     ```
 
     Or, if you're using `wget`:
