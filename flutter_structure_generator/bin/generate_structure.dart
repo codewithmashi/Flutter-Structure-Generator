@@ -7,13 +7,13 @@ final structure = {
     'app/controllers/',
     'app/data/models/',
     'app/data/services/',
-    'app/modules/dashboard/widgets/',
-    'app/modules/skills/',
-    'app/modules/projects/',
-    'app/modules/ai_assistant/',
-    'app/modules/analytics/',
-    'app/modules/profile/',
-    'app/modules/subscription/',
+    'app/modules/',
+    'app/modules/',
+    'app/modules/',
+    'app/modules/',
+    'app/modules/',
+    'app/modules/',
+    'app/modules/',
     'app/routes/',
     'app/themes/',
     'shared/widgets/',
@@ -36,18 +36,26 @@ void main() {
   structure.forEach((base, paths) {
     for (var path in paths) {
       final dir = Directory('$base$path');
-      if (!dir.existsSync()) {
-        dir.createSync(recursive: true);
-        print('Created: \${dir.path}');
+      if (path.endsWith('/')) {
+        // Create directories only if they don't exist
+        if (!dir.existsSync()) {
+          dir.createSync(recursive: true);
+          print('Created directory: ${dir.path}');
+        } else {
+          print('Directory already exists: ${dir.path}');
+        }
       }
     }
   });
 
   files.forEach((path, content) {
     final file = File(path);
+    // Create the file if it doesn't exist
     if (!file.existsSync()) {
       file.writeAsStringSync(content);
-      print('Created file: \$path');
+      print('Created file: $path');
+    } else {
+      print('File already exists: $path');
     }
   });
 
