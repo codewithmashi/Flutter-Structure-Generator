@@ -52,13 +52,13 @@ lib/
 1. **Open your terminal** and run the following command to fetch the script directly from GitHub:
 
     ```bash
-    curl -s https://raw.githubusercontent.com/codewithmashi/flutter_structure_generator/main/bin/generate_structure.dart -o generate_structure.dart
+    curl -s https://github.com/codewithmashi/Flutter-Structure-Generator/tree/main/flutter_structure_generator/bin/generate_structure.dart -o generate_structure.dart
     ```
 
     Or, if you're using `wget`:
 
     ```bash
-    wget https://raw.githubusercontent.com/codewithmashi/flutter_structure_generator/main/bin/generate_structure.dart
+    wget https://github.com/codewithmashi/Flutter-Structure-Generator/tree/main/flutter_structure_generator/bin/generate_structure.dart
     ```
 
 2. **Run the script** using Dart (Make sure you're inside the root of your Flutter project):
